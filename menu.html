@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Group 42</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="less.js" type="text/javascript"></script>
+
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+  </head>
+  
+  <body onload="myFunction()">
+
+    <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper grey darken-3">
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                    <h7>Your total: $<span id="number"></span></h7>
+                      <!-- LINK TO THE TABLE PAGE SHOULD GO IN HREF BELLOW -->
+                    <li><a class="waves-effect" href="./tableView.html">Done ordering</a></li>
+                    <li><a class="waves-effect" href="#!">Ask for help</a></li>
+                  </ul> 
+
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <nav>
+                    <div class="nav-wrapper grey darken-3">
+                      <form>
+                        <div class="input-field">
+                          <input id="search" type="search" required>
+                          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                          <i class="material-icons">close</i>
+                        </div>
+                      </form>
+                    </div>
+                  </nav>
+              </ul>
+            </div>
+          </nav>
+        </div>
+  <div style="background-image: url(https://images.designtrends.com/wp-content/uploads/2016/03/29100542/Lace-Corner-Flower-Background.jpg);"  align-items: center;>
+         <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="index.js"></script>
+
+        <script>
+          $(document).ready(function()
+          {
+            $('.carousel').carousel({
+              shift: 0,
+              padding: 50,
+              fullWidth: false,
+              dist: -20, // -100 or 0 for netfix style
+            });
+          });
+
+            $(function(){
+              $(".button-collapse").sideNav();
+            });
+        </script>
+
+
+
+  <ul id="slide-out" class="side-nav">
+
+    <li><a href="#!"><i class="material-icons">comment</i>Leave a comment</a></li>
+    <li><a href="#!"><i class="material-icons">place</i>our other locations</a></li>
+    <li><a href="#!"><i class="material-icons">restaurant</i>about us</a></li>
+    
+    <li><a href="#!"><i class="material-icons">wc</i>employment opportunities</a></li>
+    <li><a class="waves-effect" onclick=" deorder(); window.alert('No worries, last order is undone')" href="#!">Undo last order</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+            <p align="center">
+                <a href="https://www.facebook.com/"   class="fa fa-facebook"   target="_blank"></a>
+                <a href="https://www.twitter.com/" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+
+                
+                <h5 align="center"><b>Welcome to Gastro-Genero Eatery</b></h5>
+            </p>  
+
+            <h1 align="center"> <class="fa fa-chevron-down" onclick="scrollWin(0,230)"></class>&#129171</button></h1>
+            <h5 align="center">Mains</h5>
+
+            <div class="carousel">
+              <div class="carousel-item">
+                  <div class="card">
+                    <div class="card-image" >
+                        <img class="materialboxed" data-caption="$18.99, Calories: 650, May contain: nuts, soy, gluten, dairy" src="https://cbsnews1.cbsistatic.com/hub/i/r/2015/07/01/0b059f60-344d-4ada-baae-e683aff3650a/thumbnail/620x350/825bc54f859cdd47aec604b592fb3a78/istock000044051102large.jpg">
+                        <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>
+                    </div>
+                    
+                    <div class="card-content">
+                        Breaded chicken and fried with tomato sauce and covered with Mozzarella and Parmesan cheese
+                    </div>
+                  </div>
+                </div> 
+                
+
+
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-image" >
+                    
+                      <img class="materialboxed" data-caption="$15.99, Calories: 650, May contain: nuts, soy, gluten, dairy" width="600" height="100" src="http://metrocaribbean.com/stvincent-and-the-grenadines/wp-content/uploads/sites/2/2016/02/restaurant-food-salat-2.jpg">
+                      <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                    </div>
+                    
+                      <div class="card-content">
+                          This zesty avocado and shrimp salad will refresh you on a hot day.<br/>
+                      </div>
+                </div>
+              </div>
+
+              
+
+              <div class="carousel-item">
+                  <div class="card">
+                    <div class="card-image" >
+                        <img class="materialboxed" data-caption="$17.99, Calories: 840, May contain: nuts, soy, gluten, dairy" width="600" height="100" src="http://www.kowloonrestaurantonline.com/resources/img/backgrounds/chinese_3.jpg">
+                        <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                      </div>
+            
+
+                    <div class="card-content">
+                      Honey Sesame Pork Tenderloin bathed in soy sauce and our secret sauce
+                    </div>
+                  </div>
+                </div> 
+
+
+
+                <div class="carousel-item">
+                    <div class="card">
+                      <div class="card-image" >
+                          <img class="materialboxed" data-caption="$17.99, Calories: 840, May contain: nuts, soy, gluten, dairy" width="600" height="100" src="https://i.pinimg.com/originals/7e/e2/8c/7ee28c633c08c43e6befc300706bd701.jpg">
+                          <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                        </div>
+              
+                      <div class="card-content">
+                        Fetishized pig belly strips and baked strombony, this swine is deliciuos 
+                      </div>
+                    </div>
+                  </div> 
+
+
+
+                  <div class="carousel-item">
+                      <div class="card">
+                        <div class="card-image" >
+                            <img class="materialboxed" data-caption="$29.99, Calories: 840, May contain: nuts, soy, gluten, dairy"src="https://www.macphersonsrestaurant.ca/wp-content/uploads/2015/12/steak-potato.jpg">
+                            <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                          </div>
+                
+                        <div class="card-content">
+                            succulent Flank Steak with Baked Potatoes and green beans
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+
+                    <div class="carousel-item">
+                        <div class="card">
+                          <div class="card-image" >
+                              <img class="materialboxed" data-caption="$18.99, Calories: 840, May contain: nuts, soy, gluten, dairy" src="http://www.berkeleywellness.com/sites/default/files/field/image/400-05674517c-Masterfile-KirS_988_380.jpg">
+                              <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                            </div>
+                  
+                          <div class="card-content">
+                            Vegetarian Fresh Spring rolls made with rice paper
+                          </div>
+                        </div>
+                      </div> 
+              </div>
+
+              
+              <h1 align="center"> <class="fa fa-chevron-down" onclick="scrollWin(0,550)"></class>&#129171</button></h1>
+              <h5 align="center">Beers</h5>
+
+              <div class="carousel">
+                  <div class="carousel-item">
+                      <div class="card">
+                        <div class="card-image" >
+                            <img class="materialboxed" data-caption="$8.99,  4.5% alc, 150 calories" src="https://www.rd.com/wp-content/uploads/2017/03/02-Mouth-Watering-Facts-About-Guinness-Beer-Food-and-DrinkREXShutterstock_2497977a-760x506.jpg">
+                            <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>
+                        </div>
+                        
+                        <div class="card-content">
+                            Guinness iconic beer is defined by harmony. Sweet counters bitter with a base of barley
+                        </div>
+                      </div>
+                    </div> 
+                    
+    
+    
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="card-image" >
+                        
+                          <img class="materialboxed" data-caption="$7.99,  6.5% alc, 275 calories" width="600" height="100" src="http://static6.businessinsider.com/image/583811ccdd08953e1a8b4877/the-corona-beer-founder-just-made-everyone-in-his-home-village-a-millionaire.jpg">
+                          <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                    </div>
+                        
+                          <div class="card-content">
+                              The mexican classic, paired with a lime perfect for a hot summer day.
+                          </div>
+                    </div>
+                  </div>
+    
+                  
+    
+                  <div class="carousel-item">
+                      <div class="card">
+                        <div class="card-image" >
+                            <img class="materialboxed" data-caption="$9.99,  5.5% alc, 160 calories" width="600" height="100" src="https://s.yimg.com/ny/api/res/1.2/T7vj6tUOFEmuZdgd2jH8IA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NjMwO2g9MzgwO2lsPXBsYW5l/http://media.zenfs.com/en/blogs/sptusolyexperts/143300142.jpg">
+                            <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                      </div>
+                
+    
+                        <div class="card-content">
+                          That green bottle, the red star, the smiling ‘e’… like an instant welcome from an old friend.
+                        </div>
+                      </div>
+                    </div> 
+    
+    
+    
+                    <div class="carousel-item">
+                        <div class="card">
+                          <div class="card-image" >
+                              <img class="materialboxed" data-caption="$7.99,  3.5% alc, 200 calories" width="600" height="100" src="http://www.netimperative.com/wp-content/uploads/2017/03/stella-1.jpg">
+                              <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                        </div>
+                  
+                          <div class="card-content">
+                              Sophisticated Belgian beer has a well-balanced flavor profile — pleasantly bitter with a refreshing finish 
+                          </div>
+                        </div>
+                      </div> 
+    
+    
+    
+                      <div class="carousel-item">
+                          <div class="card">
+                            <div class="card-image" >
+                                <span class="card-title">Card Title</span>
+                                <img class="materialboxed" data-caption="$8.99,  4.0% alc, 200 calories"src="https://ipirotissa.gr/wp-content/uploads/2015/08/sapporobeer.jpg">
+                                <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                          </div>
+                              
+
+                            <div class="card-content">
+                              A japanese staple and classic, featuring rice in place of corn, with a dark gold color and taste
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+    
+                        <div class="carousel-item">
+                            <div class="card">
+                              <div class="card-image" >
+                                  <img class="materialboxed" data-caption="$8.99,  4.5% alc, 175 calories" src="http://www.brandish.com.ng/wp-content/uploads/2015/10/strongbow-gold.jpg">
+                                  <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                            </div>
+                      
+                              <div class="card-content">
+                                Smooth mellow with a hint of apple, distinct and full with flavour, served best over ice
+                              </div>
+                            </div>
+                          </div> 
+                  </div>
+
+
+                <h1 align="center"> <class="fa fa-chevron-down" onclick="scrollWin(0,550)"></class>&#129171</button></h1>
+
+                <h5 align="center">Deserts</h5>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="card">
+                          <div class="card-image" >
+                              <img class="materialboxed" data-caption="$9.50, Calories: 840, May contain: nuts, soy, gluten, dairy" src="http://del.h-cdn.co/assets/17/17/640x320/landscape-1493474135-delish-checkerboard-cake-001.jpg">
+                              <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>
+                          </div>
+                          
+                          <div class="card-content">
+                              Chocolate checkerboard with a smooth nutty taste
+                          </div>
+                        </div>
+                      </div> 
+                      
+      
+      
+                    <div class="carousel-item">
+                      <div class="card">
+                        <div class="card-image" >
+                          
+                            <img class="materialboxed" data-caption="$4.50, Calories: 650, May contain: nuts, soy, gluten, dairy" width="600" height="100" src="http://www.fnstatic.co.uk/images/content/package/24-legit-ways-to-eat-dessert-for-breakfast.jpeg">
+                            <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                    </div>
+                          
+                            <div class="card-content">
+                                Thick nutella and strawberry filled crepes sprinkled with powdered sugar.
+                            </div>
+                      </div>
+                    </div>
+      
+                    
+      
+                    <div class="carousel-item">
+                        <div class="card">
+                          <div class="card-image" >
+                              <img class="materialboxed" data-caption="$12.50, Calories: 840, May contain: nuts, soy, gluten, dairy" width="600" height="100" src="http://clv.h-cdn.co/assets/15/12/980x490/landscape-1426613152-54eb7ec16c821-brown-sugar-balsamic-strawberry-sauce-recipe-clx0514-s2.jpg">
+                              <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                      </div>
+                  
+      
+                          <div class="card-content">
+                            Dairy free ice cream topped with strawberry sauce
+                          </div>
+                        </div>
+                      </div> 
+      
+      
+      
+                      <div class="carousel-item">
+                          <div class="card">
+                            <div class="card-image" >
+                                <img class="materialboxed" data-caption="$14.50, Calories: 840, May contain: nuts, soy, gluten, dairy" width="600" height="100" src="http://img.taste.com.au/RHforWIE/taste/2016/11/19-colourful-desserts-to-brighten-your-day-image-3-67300-1.jpg">
+                                <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                        </div>
+                    
+                            <div class="card-content">
+                              Cofee cake with cheese and raspberries,
+                            </div>
+                          </div>
+                        </div> 
+      
+      
+      
+                        <div class="carousel-item">
+                            <div class="card">
+                              <div class="card-image" >
+                                  <img class="materialboxed" data-caption="$6.50, Calories: 840, May contain: nuts, soy, gluten, dairy"src="http://www.cafesitaly.com/wp-content/uploads/2013/10/Cannoli.jpg">
+                                  <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                          </div>
+                      
+                              <div class="card-content">
+                                  Holy Cannoli, try our chocolate cover variation
+                              </div>
+                            </div>
+                          </div>
+                          
+                          
+      
+                          <div class="carousel-item">
+                              <div class="card">
+                                <div class="card-image" >
+                                    <img class="materialboxed" data-caption="$10.50, Calories: 840, May contain: nuts, soy, gluten, dairy" src="https://cdn.unos.com/images/menus/desserts/chocolate-peanut-butter-cup.jpg">
+                                    <a class="btn-floating btn-extra-small waves-effect waves-yellow" onclick="order(); window.alert('Order has been placed'); "><i class="material-icons md-18">add</i></a>                            </div>
+                        
+                                <div class="card-content">
+                                    Chocolate peanut butter cup served with a scoop of vanilla gelati
+                                </div>
+                              </div>
+                            </div> 
+                    </div>
+      </div>
+  </body>
+</html>
+
+ 
+        
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HCI ProtoType</title>
+    <link href="payment.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body  id="root" onload="loadLists()">
+    
+    <div id="main">
+      
+      <button id="BackBtn" onclick="window.location.href='./tableView.html'"> Go Back</button>
+      
+      <h1 id="title">Pay for Your Meal</h1>
+
+
+      <div id='lists'>
+        <div id="outList" class='mainList'>
+            <h3 class="listTitle">Outstanding Bill</h3>
+          
+            <div id='outstandingList' class="BtnList"></div>
+
+            <div class='totalBox'>
+                <span class="taxText">GST:</span>
+                <span id="outstandingGST" class="taxValue"></span>
+                <br>
+                <span class="taxText">PST:</span>
+                <span id="outstandingPST" class="taxValue"></span>
+                <br>
+                <span class="totalText">Total:</span>
+                <span id="outstandingTotal" class="totalValue"></span>
+            </div>
+
+
+
+        </div>
+      
+        <div id="pendList" class="mainList">
+            <h3 class="listTitle">Split Bill and Pay</h3>
+            <div id='pendingList' class="BtnList"></div>
+
+            <div class='totalBox'>
+                <span class="taxText">GST:</span>
+                <span id="pendingGST" class="taxValue"></span>
+                <br>
+                <span class="taxText">PST:</span>
+                <span id="pendingPST" class="taxValue"></span>
+                <br>
+                <span class="totalText">Total:</span>
+                <span id="pendingTotal" class="totalValue"></span>
+            </div>
+
+            <div class="listMod">
+                <button id="removeAll" class="modBtn" onclick="removeAll()">Clear List</button>
+                <br>
+                 <button id="Pay" class="modBtn" onclick="doPayBtn()">Pay</button>
+            </div>
+
+        </div>
+      </div> <!--  end lsits  -->
+
+
+
+
+        <div id='payButtons'>
+            <button id="PayAll" onclick="payAll()">Pay for Everything</button>
+        </div> <!--  end PayButtons  -->
+
+    </div>  <!--  end main  -->
+    
+    
+    
+    
+    <script src="payment_java.js"> </script>
+  </body>
+</html>

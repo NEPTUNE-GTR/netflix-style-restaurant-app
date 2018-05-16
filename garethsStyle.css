@@ -1,0 +1,221 @@
+
+:root {
+    
+    background-image: url("http://www.uncorkd.biz/wp-content/uploads/2016/09/Busy-Restaurant.jpg");
+   
+    background-size: 100%;
+        --g-background-color: grey;
+    --btn-hover-color: rgba(41, 41, 41, .9);
+    --btn-color: rgb(43, 43, 43);
+    
+    background-color: black;
+}
+
+#container
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin: 0 auto;
+}
+
+#menuList ul
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+#menuList li
+{
+    background-color: var(--btn-color); 
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:5px;
+    padding-left:5px;
+}
+
+#main li:hover
+{
+    background-color: var(--btn-hover-color);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.primary
+{
+    margin: 10px;
+}
+
+
+.other
+{
+    margin: 50px;
+}
+
+a
+{
+    width: 100px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.borderedItem
+{
+    background: rgb(43, 43, 43);
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+    text-align: left;
+    display: inline-block;
+}
+.borderedItem2
+{
+
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.textBox
+{
+    float: right;
+}
+
+.credentials 
+{
+    float:left;
+}
+
+#loginBtn 
+{
+    margin-left: 50px;
+    border: 1px solid gray;
+    float: right;
+}
+
+#main h3
+{
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+accountCreate
+{
+    background-color: black;
+    margin-bottom: 420px;
+}
+
+#createAcctBtn
+{
+    margin-left: 50px;
+    margin-top: 30px;
+    float:right;
+    border: 1px solid gray;
+}
+
+.button
+{
+
+    background-color: var(--btn-color);
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+    text-align: center;
+}
+.button:hover
+{
+    background-color: var(--btn-hover-color);
+}
+.AddToOrderBtn
+{
+    margin-top:5px;
+}
+
+.backBtn
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#checkBoxes 
+{
+    display: inline-block;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+#allergyDoneBtn 
+{
+    border: 1px solid gray;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.tableItem
+{
+    display: inline-block;
+}
+.tableItemPrice
+{
+    margin-left: 20px;
+    display: inline-block;
+    float: right;
+}
+#tableButton
+{
+    margin-top: 10px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+
+
+
+.popUpWindow {
+    display: flex;
+    position: absolute;
+    background: black;
+    border: 3px solid gray;
+    border-radius: 2%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    height: 50%;
+    min-height: 25em;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+}
+
+.popUpHeader {
+    display: flex;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 5%;
+    font-size: 1.6em;
+    color: white;
+}
+
+.popUpBtn {
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 80%;
+    min-height: 3em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(60, 60, 60);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Todo: add logout option? or clear table if 
+      no account -->
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="garethsStyle.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+                <a><h1>Your table</h1></a>
+        </div> <!-- header -->
+        <div id="content">
+            <div id="main">
+                <div class="borderedItem"> <!-- Order summary for an individual -->
+                    <a style="display:inline"><h7>Name: Joe</h7></a>
+                    <div id="menuList">
+                        <ul>
+                            <li><a><h7>Item 1.............$12.01</h7></a></li>
+                            <li><a><h7>Item 2.............$22.43</h7></a></li>
+                            <li><a><h7>Item 3.............$35.86</h7></a></li>
+                        </ul>
+                    </div>
+
+                    <a onclick="genPaySelection()"><div class="button">Pay Now</div></a>
+                    <a href="./menu.html"><div class="button AddToOrderBtn">Add to order</div></a>
+                </div>
+                <div class="borderedItem"> <!-- Order summary for an individual -->
+                    <a style="display:inline"><h7>Name: Jane</h7></a>
+                    <div id="menuList">
+                            <ul>
+                                <li><a><h7>Item 1.............$8.99</h7></a></li>
+                                <li><a><h7>Item 2.............$45.01</h7></a></li>
+                                <li><a><h7>Item 3.............$31.50</h7></a></li>
+                            </ul>
+                        </div>
+
+                    <a onclick="genPaySelection()"><div class="button">Pay Now</div></a>
+                    <a href="./menu.html"><div class="button AddToOrderBtn">Add to order</div></a>
+                </div>
+
+                <br/>
+                <div class="borderedItem2" style=""> <!-- Add person -->
+                    <a href="./signIn.html"><div class="button" style="float:right;margin:1px">Add New Person</div></a>
+                </div>
+
+                <div id="tableButton"><a href="./payment.html"><div class="button">See Entire Bill / Split Bill</div></a></div>
+                
+                <!--<div id="tableButton"><a href=""><div class="button">Clear Table and Logout</div></a></div> -->
+            </div> <!-- main -->
+        </div> <!-- content -->
+        <div id="footer"></div>
+    </div> <!-- container -->
+
+    <script src="tableJava.js"> </script>
+</body>
